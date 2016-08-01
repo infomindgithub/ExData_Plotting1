@@ -1,7 +1,7 @@
 ## Summary
 
 * The solutions follow the instructions in the original README.md that was in the fork/clone repo
-* The following PNG plots and associated R scripts are in the repo. 
+* The following PNG plots and associated R scripts shown in parentheses below are in the repo. 
  
 	+ plot1.png (plot1.R)
 	+ plot2.png (plot2.R)
@@ -21,6 +21,7 @@
 * Subset the dfpower data frame to obtain the data from the dates 2007-02-01 and 2007-02-02 using the following R code:
 
 dfpower$Date <- as.Date(dfpower$Date, format="%d/%m/%Y")
+
 dfpower <- dfpower[(dfpower$Date=="2007-02-01") | (dfpower$Date=="2007-02-02"),]
 
 * Also a new column "Timestamp" was obtained using a transform function to the Date column to be able to formatdate as three character day of the week (e.g. Thu, Fri, etc.)
